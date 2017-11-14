@@ -10,12 +10,12 @@
 package treap
 
 import (
-        "rand"
-        "time"
+	"math/rand"
+	"time"
 )
 
 func init() {
-        rand.Seed(time.Nanoseconds())
+	rand.Seed(time.Now().UnixNano())
 }
 
 // A Tree is the data structure that stores everything
